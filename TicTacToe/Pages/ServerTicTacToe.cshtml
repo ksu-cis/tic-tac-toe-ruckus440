@@ -6,7 +6,7 @@
 
 <h2>ServerTicTacToe</h2>
 
-<form>
+<div>
     <div class="board">
         @for (int y = 0; y < 3; y++)
         {
@@ -20,7 +20,7 @@
                 else
                 {
                     <div class="cell">
-                        @Model.State[x,y]
+                        @Model.State[x, y]
                     </div>
                 }
 
@@ -29,4 +29,4 @@
         }
     </div>
     <input type="submit" value="Make your move"
-</form>
+</div>
